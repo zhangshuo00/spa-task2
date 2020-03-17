@@ -23,7 +23,7 @@ $('#phone').blur(function(){
 $('#password').blur(function(){
     var pattern3 = /(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-z0-9]+$)^[^\s\u4e00-\u9fa5]{12,20}$/;
     var password = $('#password').val();
-    pattern3.test(password) ? '' : red()
+    pattern3.test(password) ? '' : red();
     function red(){
         $('#password').attr('style','border-color:red')
         $('#pwderror').attr('style','display:block')
