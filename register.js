@@ -17,7 +17,6 @@ $('#phone').blur(function(){
         $('#phone').attr('style','border-color:red')
         $('#phonerror').attr('style','display:block')
     }
-    // console.log(pattern.test(phone))
 })
 
 $('#password').blur(function(){
