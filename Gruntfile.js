@@ -7,16 +7,16 @@ module.exports = function (grunt) {
         },
         files: {
           src: 'register.html',
-          dest: 'register.min.html'
+          dest: './dist/register.min.html'
         }
       },
       cssmin:{
-          'register.min.css':'register.css'
+          './dist/register.min.css':'register.css'
       },
       uglify:{
           release:{
               files:{
-                  'register.min.js':'register.js'
+                  './dist/register.min.js':'register.js'
               }
           }
       }

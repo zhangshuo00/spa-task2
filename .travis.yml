@@ -6,6 +6,8 @@ after_script:
   - grunt html
   - grunt css
   - grunt js
+  - cd ./dist
+  - git init
   - git config user.name "${USER_NAME}"
   - git config user.email "${USER_EMAIL}"
   - git add .
