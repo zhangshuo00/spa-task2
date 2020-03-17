@@ -31,16 +31,18 @@ $('#password').blur(function(){
 })
 
 $('.getNum').click(function(){
-    var i = 10
+    $('.getNum').attr('disabled','disabled');
+    var i = 10;
     var n = setInterval(a, 1000);
     function a(){
         if(i > 0){
             i--;
-            $('.getNum').text(i)
+            $('.getNum').text(i+'s后重试');
         }else{
             clearInterval(n);
-            $('.getNum').attr('disabled','disabled')
-            $('#yanzhenerror').attr('style','display:block')
+            $('#yanzhenerror').attr('style','display:block');
+            $('.getNum').attr('disabled','none');
+            $('.getNum').text('获取验证码');
         }
     }
 })
